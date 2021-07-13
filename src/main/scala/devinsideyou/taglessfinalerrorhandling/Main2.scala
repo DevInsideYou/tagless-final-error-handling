@@ -84,7 +84,7 @@ object Main2 extends App {
           F.handleErrorWith(F.flatMap(dsl.badTechnical)(console.good))(console.bad)
 
         override def goodBusinessProgram: F[Unit] =
-          G.handleErrorWith(F.flatMap(dsl.goodBusiness)(console.good))(console.bad)
+          F.flatMap(dsl.goodBusiness)(console.good)
 
         override def badBusinessProgram: F[Unit] =
           G.handleErrorWith(F.flatMap(dsl.badBusiness)(console.good))(console.bad)
