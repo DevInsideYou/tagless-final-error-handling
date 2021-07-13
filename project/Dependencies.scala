@@ -66,7 +66,7 @@ object Dependencies {
         "org.typelevel" %% "discipline-scalatest" % "2.1.0"
 
       val `kind-projector` =
-        "org.typelevel" %% "kind-projector" % "0.11.1" cross CrossVersion.full
+        "org.typelevel" %% "kind-projector" % "0.13.0" cross CrossVersion.full
     }
   }
 }
